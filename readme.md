@@ -21,4 +21,9 @@ maintainable.
 **Backend:** To run the project start the backend express.js server using `node ./backend/main.js`
 from the root of the project. (By default server starts on port 3000)
 
-**Frontend:** To run react frontend run the command `npm run preview`
+**Frontend:** To run react frontend run the command `npm run dev`. `NOTE: make sure to add a .env
+file in the frontend directory with VITE_API_URL for example:`
+
+```
+VITE_API_URL=http://localhost:3000
+```

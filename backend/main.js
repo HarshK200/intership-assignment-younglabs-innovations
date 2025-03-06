@@ -7,7 +7,7 @@ const app = Express();
 
 // middlewares
 app.use(Express.json());
-app.use(cors());
+app.use(cors()); // cors enabled for all origin for simplicity sake
 
 
 // Routes
