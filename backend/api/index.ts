@@ -1,14 +1,12 @@
 const Express = require("express");
 const cors = require("cors");
 
-const PORT = 3000;
+const PORT = 8080;
 const app = Express();
-
 
 // middlewares
 app.use(Express.json());
 app.use(cors()); // cors enabled for all origin for simplicity sake
-
 
 // Routes
 app.get("/api/greet", (req, res) => {
@@ -26,8 +24,9 @@ app.get("/api/greet", (req, res) => {
   });
 });
 
-
 // starting server
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
+
+module.exports = app;
